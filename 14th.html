@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Your Thoughts Submission</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7f8;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .form {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            color: #333333;
+        }
+
+        label {
+            margin-bottom: 10px;
+            display: block;
+            font-weight: bold;
+            color: #555555;
+        }
+
+        select, textarea, button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #cccccc;
+            font-size: 16px;
+        }
+
+        select:focus, textarea:focus, button:focus {
+            outline: none;
+            border-color: #66afe9;
+        }
+
+        button {
+            background-color: #66afe9;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #5a9bd6;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form">
+            <h1>Share Your Thoughts!</h1>
+            <form action="#" method="post">
+                <label for="Concern">What’s on your mind?</label>
+                <select name="Concern" id="Concern">
+                    <option value="" disabled selected>Select a concern...</option>
+                    <option>If you feel sad</option>
+                    <option>If there is something bothering you</option>
+                    <option>If you are mad at me</option>
+                    <option>If you are not in the mood to talk</option>
+                    <option>If you need space</option>
+                    <option>If you need time to talk about a problem</option>
+                    <option>If you have a problem</option>
+                    <option>If you want to send a random message</option>
+                </select>
+                <label for="Message">Your Message:</label>
+                <textarea name="Message" id="Message" placeholder="Type your message here..." required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
